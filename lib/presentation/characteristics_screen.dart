@@ -30,12 +30,17 @@ class _CharacteristicsScreenState extends State<CharacteristicsScreen> {
             ),
             SizedBox(height: 5.h,),
             Row(
-              children: [                
-                Image.asset(               
-                  width: 16.w,
-                  height: 19.h,                                  
-                  'images/image1.png',                                   
-                ), 
+              children: [    
+                Placeholder(
+                  fallbackHeight: 16.h,
+                  fallbackWidth: 19.w,
+                ),    
+                SizedBox(width: 5.w),         
+                // Image.asset(               
+                //   width: 16.w,
+                //   height: 19.h,                                  
+                //   'images/image1.png',                                   
+                // ), 
                 Text("Планировка", style: TextStyle( fontSize: 14,),),                
                 Spacer(), 
                 Text( 
@@ -45,11 +50,16 @@ class _CharacteristicsScreenState extends State<CharacteristicsScreen> {
             SizedBox(height: 5.h,),
             Row(
               children: [                
-                Image.asset(               
-                  width: 16.w,
-                  height: 19.h,                                  
-                  'images/image2.png',                                   
-                ), 
+                // Image.asset(               
+                //   width: 16.w,
+                //   height: 19.h,                                  
+                //   'images/image2.png',                                   
+                // ), 
+                Placeholder(
+                  fallbackHeight: 16.h,
+                  fallbackWidth: 19.w,
+                ),
+                SizedBox(width: 5.w), 
                 Text("Высота потолков", style: TextStyle( fontSize: 14,),),                
                 Spacer(), 
                 Text( 
@@ -59,11 +69,16 @@ class _CharacteristicsScreenState extends State<CharacteristicsScreen> {
             SizedBox(height: 5.h,), 
             Row(            
               children: [                
-                Image.asset(               
-                  width: 16.w,
-                  height: 19.h,                                  
-                  'images/image3.png',                                   
-                ), 
+                // Image.asset(               
+                //   width: 16.w,
+                //   height: 19.h,                                  
+                //   'images/image3.png',                                   
+                // ), 
+                Placeholder(
+                  fallbackHeight: 16.h,
+                  fallbackWidth: 19.w,
+                ),
+                SizedBox(width: 5.w),                
                 Text(
                   "Ремонт", 
                 style: TextStyle( fontSize: 14,),),                
@@ -72,7 +87,7 @@ class _CharacteristicsScreenState extends State<CharacteristicsScreen> {
                   "Без ремонта", 
                   style: TextStyle( fontSize: 14,),),                  
               ],  
-            ),    
+            ),
             SizedBox(height: 5.h,),  
             Row(
               children: <Widget>[

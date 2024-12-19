@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_first_home_task/constants.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class DescriptionScreen extends StatefulWidget {
@@ -20,7 +21,7 @@ class _DescriptionScreenState extends State<DescriptionScreen> {
         ),   
         SizedBox(height: 5.h,),   
         Text(
-          "Дом расположен в ЗЖМ, мкр Левенцовский, вблизи остановки общественного транспорта. Рядом расположены гипермаркеты Магнит, Пятерочка, Лента, Метро, отделение Сбербанка. В районе работают 6 детских садов, 1 школа. Есть собственная управляющая компания.",
+          textForDescription,
           style: TextStyle(fontSize: 16),
         ),
         Row(

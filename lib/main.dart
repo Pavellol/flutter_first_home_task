@@ -16,17 +16,15 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {    
     return ScreenUtilInit(
-      designSize: const Size(360, 815),
+      designSize: const Size(375, 812),
       minTextAdapt: true,
       splitScreenMode: true,
       // Use builder only if you need to use library outside ScreenUtilInit context
       builder: (_ , child) {
         return MaterialApp(
           debugShowCheckedModeBanner: false,         
-          theme: ThemeData(
-            primarySwatch: Colors.blue,
-            textTheme: Typography.englishLike2018.apply(fontSizeFactor: 1.sp),
-          ),
+          theme: ThemeData( 
+          ),          
           home: child,
         );
       },
@@ -65,7 +63,7 @@ class _MyHomePageState extends State<MyHomePage> {
         ],
       ),
       body: ListView(
-        padding: EdgeInsets.only(left: 20),  
+        padding: EdgeInsets.only(left: 10.w, right: 10.w),  
         children: <Widget>[                              
           Column(      
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -78,7 +76,8 @@ class _MyHomePageState extends State<MyHomePage> {
             SizedBox(height: 5.h,),
             DescriptionScreen(),
             SizedBox(height: 10.h,),  
-            AvitoRefScreen(),          
+            AvitoRefScreen(),  
+            SizedBox(height: 10.h,),        
           ],
         ),
         ],

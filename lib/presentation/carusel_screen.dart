@@ -14,19 +14,27 @@ class _CaruselScreenState extends State<CaruselScreen> {
     return Center(
          child: Stack(              
            children: <Widget> [                    
-             Image.asset(
-               width: 346.w,
-               height: 245.h,
-               "images/forest.png",
-             ),
-             Positioned(
-               top: 210.h,
-               left: 225,                  
-               child: Image.asset(
-                 width: 35.w,
-                 height: 16.h,
-                 "images/forest2.png",                       
-               )
+            //  Image.asset(
+            //    width: 346.w,
+            //    height: 245.h,
+            //    "images/forest.png",
+            //  ),
+            Placeholder(
+              fallbackHeight: 245.0.h, 
+              fallbackWidth: 346.0.w,  
+            ),
+            Positioned(
+              top: 210.h,
+              left: 160.w,                  
+              //  child: Image.asset(
+              //    width: 35.w,
+              //    height: 16.h,
+              //    "images/forest2.png",                       
+              //  )
+              child: Placeholder(                
+                fallbackHeight: 16.0.h, 
+                fallbackWidth: 35.0.w,  
+            ),
              ),
            ],
          ),
